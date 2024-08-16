@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" a href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="menu">
+            <ul>
+                <li>
+                    <a class="menu-list" href="">Sobre</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="menu-list" href="">Produtos</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <img src="logo.png" alt="logo">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="menu-list" href="">Home</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="menu-list" href="">Historia</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section class="slider">
+                <div class="slider-content">
+
+                    <input type="radio" name="btn-radio" id="radio1">
+                    <input type="radio" name="btn-radio" id="radio2">
+                    <input type="radio" name="btn-radio" id="radio3">
+
+                    <div class="slide-box primeiro">
+                        <img class="img-desktop" src="slide-1.jpg" alt="slide 1">
+                        <img class="img-mobile" src="slide-1-mob.jpg" alt="slide 1">
+                    </div>
+                    <div class="slide-box">
+                        <img class="img-desktop" src="slide-2.jpg" alt="slide 2">
+                        <img class="img-mobile" src="slide-2-mob.jpg" alt="slide 2">
+                    </div>
+                    <div class="slide-box">
+                        <img class="img-desktop" src="slide-3.jpg" alt="slide 3">
+                        <img class="img-mobile" src="slide-3-mob.jpg" alt="slide 3">
+                    </div>
+
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+
+                    <div class="nav-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+
+                </div>
+            </section>
+            <section class="produtos">
+                <ul>
+                    <li>
+                        <img class="cafe" src="cafe.png" alt="cafe">
+                        <h1 class="cafeh1">CAFÉ</h1>
+                        <p class="cafep">Não poderia faltar aquele delicioso cafezinho brasileiro.</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img class="pao" src="pao.png" alt="pao">
+                        <h1 class="paoh1">PÃES</h1>
+                        <p class="paop">Nossos pães são produzidos com ingredientes selecionados!</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img class="lanche" src="lanche.png" alt="cafe">
+                        <h1 class="lancheh1">LANCHES</h1>
+                        <p class="lanchep">Nosso cardápio também conta com lanches deliciosos!</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="form-container">
+                <div class="container">
+                    <form>
+                        <h1>Entre em contato</h1>
+                        <p>Preencha o formulário abaixo e entraremos em contato com você</p>
+                        <div class="input-single">
+                            <input class="input" type="text" id="nome" required>
+                            <label for="nome">Seu nome completo</label>
+                        </div>
+                        <div class="input-single">
+                            <input class="input" type="text" id="email" required>
+                            <label for="email">Seu e-mail</label>
+                        </div>
+                        <div class="input-single">
+                            <input class="input" type="text" id="telefone" required>
+                            <label for="telefone">Seu telefone</label>
+                        </div>
+                        <div class="btn"><input type="submit" value="Enviar"></div>
+                    </form>
+                </div>
+            </section>
+            <section class="loc">
+                <img src="loc.png" alt="loc-icon">
+                <h1>Nossa Localidade</h1>
+                <h2>Endereço aqui</h2>
+                <div class="seta">&#9758;</div>
+                <div class="seta2">&#10154;</div>
+                <p>R. Ex, 99-99 - Vila Aleatoria, Cidade - SP, 9999-999</p>
+                <a class="locbtn" href="https://www.google.com/maps" target="_blank">Ver Localização</a>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-center">
+            <p>© 2024 LWA - Todos os direitos reservados. - Dev. by: <a href="https://teudevs-projects.vercel.app/">Matheus Melo</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

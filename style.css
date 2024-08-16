@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    zoom: 0% !important;
+}
+li{
+    list-style-type: none;
+}
+/* Menu De Produtos */
+.menu {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+}
+.menu img{
+    width: 150px;
+    margin-top: 25px;
+}
+.menu-list {
+    display: flex;
+    font-size: 1.5rem;
+    font-family: Poppins;
+    gap: 30px;
+    margin-right: -5px;
+    color: white;
+    
+}
+header {
+    background-color: orange;
+    filter: brightness(80%);
+}
+.menu a:hover{
+    color: yellow;
+}
+/* Menu De Navegação */
+section.slider{
+    margin: 0 auto;
+    width: 110%;
+    height: auto;
+    padding: 0 !important;
+}
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+
+}
+.slider-content input, .img-mobile{
+    display: none;
+}
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+.slide-box img{
+    width: 100%;
+    filter: brightness(50%);
+}
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 38%;
+    display: flex;
+    justify-content: center;
+}
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid orange;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+.nav-manual .manual-btn:hover{
+    background-color: orange;
+}
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: orange;
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: orange;
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: orange;
+}
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+/* Principais Produtos */
+section.produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    background-color: saddlebrown;
+}
+.cafe{
+    width: 70%;
+    filter: drop-shadow(1px 1px 10px orange);
+}
+.pao{
+    width: 60%;
+    filter: drop-shadow(1px 1px 10px orange);
+    margin-left: 70px;
+}
+.lanche{
+    width: 70%;
+    margin-left: 110px;
+    filter: drop-shadow(1px 1px 10px orange);
+}
+.cafeh1{
+    color: #08a551;
+    font-size: 30px;
+    margin-left: 120px;
+}
+.paoh1{
+    color: #08a551;
+    font-size: 30px;
+    margin-left: 155px;
+    z-index: 10;
+}
+.lancheh1{
+    color: #08a551;
+    font-size: 30px;
+    margin-left: 200px;
+}
+.cafep{
+    font-size: 20px;
+    width: 400px;
+}
+.paop{
+    font-size: 20px;
+    width: 400px;
+    padding-left: 30px;
+}
+.lanchep{
+    font-size: 20px;
+    width: 400px;
+    margin-left: 100px;
+}
+.produtos p{
+    padding-bottom: 20px;
+    color: #fff;
+}
+/* Formulario */
+form{
+    background: saddlebrown;
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    margin-left: 420px;
+    font-size: 15px;
+}
+
+form h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: orange;
+    font-size: 22pt;
+}
+
+form p{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form .input-single{
+    position: relative;
+    margin: 30px 0;
+}
+
+form .input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    cursor: text;
+    transition: all 0.5s;
+    color: #808080;
+}
+
+form .input-single .input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid orange;
+    padding: 5px;
+    outline: 0;
+    font-size: 16px;
+    background-color: saddlebrown;
+}
+
+form .input-single .input:focus{
+    border-bottom: 2px solid black;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: orange;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: orange;
+    color: #fff;
+    font-size: 14pt;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+form input[type=submit]:hover{
+    background-color: black;
+}
+.form-container{
+    padding-top: 100px;
+    visibility: hidden;
+    background-color: saddlebrown;
+    border-top: 2px solid white;
+}
+.produtos p{
+    visibility: hidden;
+    margin-top: 10px;
+
+}
+.produtos h1{
+    visibility: hidden;
+    margin-top: 30px;
+}
+.produtos img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+.loc{
+    display: flex;
+    align-items: center;
+    height: 450px;
+    position: relative;
+    background-color: saddlebrown;
+    border-top: 2px solid white;
+}
+.loc h1{
+    position: absolute;
+    font-size: 50px;
+    margin-top: 200px;
+    margin-left: 20px;
+    filter: drop-shadow(1px 1px 10px orange);
+    font-family: "Poppins";
+    color: #ffffff;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+.loc img{
+    width: 5%;
+    z-index: 200000;
+    position: absolute;
+    margin-left: 470px;
+    margin-top: 200px;
+    filter: drop-shadow(1px 1px 3px orange);
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+.loc h2{
+    font-size: 40px;
+    margin-left: 950px;
+    margin-top: -300px;
+    font-family: "Poppins";
+    color: #ffffff;
+    filter: drop-shadow(1px 1px 10px orange);
+}
+.seta{
+    font-size: 40px;
+    transform: rotate(90deg);
+    color: rgb(255, 255, 255);
+    margin-top: -300px;
+    margin-left: 20px;
+    filter: drop-shadow(1px 1px 1px orange);
+
+}
+.loc p{
+    position: absolute;
+    margin-left: 960px;
+    font-size: 30px;
+    font-family: "Poppins";
+    margin-right: 70px;
+    color: orange;
+    
+}
+.seta2{
+    position: absolute;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-left: 900px;
+    margin-top: -90px;
+    
+}
+.locbtn{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: orange;
+    color: #fff;
+    font-size: 14pt;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 250px;
+    font-family: "Poppins";
+    transition: 0.5s;
+}
+.locbtn:hover{
+    background-color: black;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: orange;
+    color: #adadad;
+    font-size: 1.3rem;
+}
+
+.footer-center {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+}
+
+.footer-center a, p {
+    color: rgb(255, 255, 255);
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 20px;
+    }
+}
+@media screen and (max-width: 900px){
+    .img-desktop{
+        display: none;
+    }
+    .img-mobile{
+        display: block;
+    }
+    .nav-auto, .nav-manual{
+        margin-top: 85%
+    }
+    .slide-box img {
+        width: 130%;
+        filter: brightness(50%);
+    }
+    .menu-list{
+        font-size: 1.4rem;
+        border-bottom: 1px solid saddlebrown;
+        margin-right: 5px;
+    }
+    .produtos{
+        display: table-caption !important;
+    }
+    .produtos img {
+        margin-left: 0px;
+    }
+    .produtos h1{
+        margin-left: 60px;
+    }
+    .lancheh1{
+        margin-left: 30px !important;
+    }
+    .cafe{
+        margin-left: -15px !important;
+    }
+    .cafep{
+        margin-left: -80px;
+    }
+    .paop{
+        margin-left: -115px;
+    }
+    .lanchep{
+        margin-left: -70px;
+    }
+
+    form{
+        margin: 0;
+        border: none;
+    }
+    .produtos{
+        border-top: 2px solid white;
+    }
+    .loc{
+        height: 750px;
+        padding-top: 170px;
+    }
+    .loc h1{
+        font-size: 30px;
+        margin-top: -635px;
+        animation: none;
+    }
+    .seta{
+        margin-top: -500px;
+    }
+    .seta2{
+        margin-left: 0;
+        margin-top: -200px;
+    }
+    .loc img{
+        margin-left: 300px;
+        margin-top: -640px;
+        width: 15%;
+        animation: none;
+    }
+    .loc h2{
+        margin-top: -500px;
+        font-size: 25px;
+        margin-left: 70px;
+    }
+    .loc p{
+        margin-left: 50px;
+        margin-right: 0;
+        margin-top: -100px;
+    }
+    .locbtn{
+        margin-left: 75px;
+    }
+
+    
+}
