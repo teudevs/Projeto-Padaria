@@ -371,6 +371,9 @@ footer {
     }
 }
 @media screen and (max-width: 900px){
+    *{
+        overflow: hidden;
+            }
     .img-desktop{
         display: none;
     }
